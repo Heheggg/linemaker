@@ -1,9 +1,12 @@
 from display import *
+from future import division
 
 def draw_line(x0, y0, x1, y1, screen, color):
     if(x0 > x1):
         draw_line(x1, y1, x0, y0, screen, color)
 
+    slope = (y1 - y0)/(x1 - x0)
+        
     else:
         A = y1 - y0
         B = - (x1 - x0)
