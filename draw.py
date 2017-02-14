@@ -1,5 +1,6 @@
+from _future_ import division
 from display import *
-from future import division
+
 
 def draw_line(x0, y0, x1, y1, screen, color):
     if(x0 > x1):
