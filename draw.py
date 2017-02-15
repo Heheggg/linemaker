@@ -5,10 +5,10 @@ from display import *
 def draw_line(x0, y0, x1, y1, screen, color):
     if(x0 > x1):
         draw_line(x1, y1, x0, y0, screen, color)
-
-    slope = (y1 - y0)/(x1 - x0)
         
     else:
+        slope = (y1 - y0)/(x1 - x0)
+            
         if slope > 1:
             return draw_quad2(x0, y0, x1, y1, screen, color)
         elif slope > 0:
@@ -19,7 +19,7 @@ def draw_line(x0, y0, x1, y1, screen, color):
             return draw_quad7(x0, y0, x1, y1, screen, color)
 
     
-def draw_quad1(x0, y0, x1, y1, screen, color)
+def draw_quad1(x0, y0, x1, y1, screen, color):
         A = y1 - y0
         B = - (x1 - x0)
         distance = 2 * A + B
@@ -86,7 +86,7 @@ def draw_quad8(x0, y0, x1, y1, screen, color):
             if(d < 0)
                 y -= 1
                 d -= 2 * B
-            x +=
+            x += 1
             d += 2 * A
 
         return screen
