@@ -1,4 +1,4 @@
-from _future_ import division
+from __future__ import division
 from display import *
 
 
@@ -26,7 +26,7 @@ def draw_quad1(x0, y0, x1, y1, screen, color):
 
         x = x0
         y = y0
-        while x < x1:
+        while (x < x1):
             plot(screen, color, x, y)
             if distance > 0:
                 y += 1
@@ -44,9 +44,9 @@ def draw_quad2(x0, y0, x1, y1, screen, color):
     
         x = x0
         y = y0
-        while y < y1
+        while (y < y1):
             plot(x,y);
-            if d < 0
+            if d < 0:
                 x += 1
                 d+= 2 * A
             y += 1
@@ -62,9 +62,9 @@ def draw_quad7(x0, y0, x1, y1, screen, color):
         x = x0
         y = y0
         d = A - 2 * B
-        while (y > y1)
+        while (y > y1):
             plot(x,y)
-            if d > 0
+            if d > 0:
                 x += 1
                 d += 2 * a
             y -= 1
@@ -81,9 +81,9 @@ def draw_quad8(x0, y0, x1, y1, screen, color):
         y = y0
 
         d = 2 * A - B 
-        while (x < x1)
+        while (x < x1):
             plot(x,y)
-            if(d < 0)
+            if(d < 0):
                 y -= 1
                 d -= 2 * B
             x += 1
