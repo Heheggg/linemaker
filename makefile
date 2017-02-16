@@ -1,2 +1,7 @@
+all: run
+
+run: main.py
+	python main.py
+
 clean:
-	rm -f *.pyc *.png *.ppm \
+	rm -f *.png  *.ppm *.pyc \
